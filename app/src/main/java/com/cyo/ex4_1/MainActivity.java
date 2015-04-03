@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
                     Double double_Hight = Double.parseDouble(hight);
                     Double double_weight = Double.parseDouble(weight);
 //                    未輸入的例外處理
-                    if (hight == "" || weight == "") {
+                    if (hight.isEmpty() || weight.isEmpty() ) {
                         throw new Exception();
 //                        輸入範圍例外處理
                     } else if (double_Hight <= 0 | double_Hight >= 3 || double_weight <= 0 | double_weight >= 500) {
