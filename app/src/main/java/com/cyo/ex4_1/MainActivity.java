@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
                     if (hight == "" || weight == "") {
                         throw new Exception();
 //                        輸入範圍例外處理
-                    } else if (double_Hight <= 0 | double_Hight >= 3 && double_weight <= 0 | double_weight >= 500) {
+                    } else if (double_Hight <= 0 | double_Hight >= 3 || double_weight <= 0 | double_weight >= 500) {
                         throw new Exception();
                     }
 //將資料放入bundle(K,V)
